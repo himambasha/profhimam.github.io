@@ -1,5 +1,265 @@
-Welcome to My Academic Blog
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himam Basha | Assistant Professor & AI Researcher</title>
+    <style>
+        :root {
+            --primary: #1e293b; /* Sleek Dark Slate */
+            --accent: #2563eb;  /* Academic Blue */
+            --bg: #f8fafc;      /* Crisp Light Background */
+            --text: #334155;    /* Readable Soft Black */
+            --card-bg: #ffffff;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
 
-    Hello World! Welcome to My Blog
-    This site is built using static architecture and hosted on GitHub Pages.
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: var(--primary);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Hero Profile Section */
+        .hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.25rem;
+            color: #93c5fd;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Grid Content Area */
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h3.section-title {
+            font-size: 1.75rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Grid Framework for Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .card h4 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: var(--accent);
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">HB // Portfolio</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#blog">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Hero Banner -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Himam Basha</h1>
+            <h2>Assistant Professor & M.Tech Specialist</h2>
+            <p>Focusing on Computer Science Education, Core Systems Engineering, and the real-world deployment of Generative AI Architectures.</p>
+        </div>
+    </section>
+
+    <!-- Content Sections Container -->
+    <main>
+
+        <!-- About / Profile Segment -->
+        <section id="about">
+            <h3 class="section-title">Academic Profile</h3>
+            <p style="font-size: 1.1rem; max-width: 900px;">
+                Welcome to my academic hub. As a computer science instructor, I map theory to scalable code execution. I manage core engineering curricula, design automated laboratory frameworks, and explore the intersect of standard software paradigms with cutting-edge Large Language Models (LLMs).
+            </p>
+        </section>
+
+        <!-- Research Specialization Grid -->
+        <section id="research">
+            <h3 class="section-title">Research & Specializations</h3>
+            <div class="grid">
+                <div class="card">
+                    <span class="badge">GenAI</span>
+                    <h4>Generative AI Engineering</h4>
+                    <p>Investigating practical integration pipelines, prompt design architectures, and small-language model implementations for automated educational assessment tools.</p>
+                </div>
+                <div class="card">
+                    <span class="badge">Systems</span>
+                    <h4>Operating Systems & Scripts</h4>
+                    <p>Analyzing process scheduler metrics, optimization models for memory virtualization, and building robust container automation using Linux environments.</p>
+                </div>
+                <div class="card">
+                    <span class="badge">Software</span>
+                    <h4>Design Patterns</h4>
+                    <p>Emphasizing modular engineering protocols, abstract architectures, code quality control, and scalable multi-tier programming paradigms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coursework and Materials Section -->
+        <section id="teaching">
+            <h3 class="section-title">Academic Courses & Resources</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Advanced Operating Systems</h4>
+                    <p style="margin-bottom: 1rem; color: #64748b;">Curriculum Framework</p>
+                    <p>A comprehensive multi-session plan systematically mapping Core Process Management, File Handling Protocols, and Security Models.</p>
+                </div>
+                <div class="card">
+                    <h4>Practical Lab Suites</h4>
+                    <p style="margin-bottom: 1rem; color: #64748b;">Data Structures & C Lab</p>
+                    <p>A structural compilation of sequential software assignments targeting memory layout, procedural code debugging, and logic compilation workflows.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Blog Engine Area -->
+        <section id="blog">
+            <h3 class="section-title">Latest Insights</h3>
+            <div class="grid">
+                <div class="card">
+                    <p style="font-size: 0.85rem; color: var(--accent); font-weight: 600;">COMING SOON</p>
+                    <h4 style="margin-top: 0.25rem;">Building an Automated Assessment Engine</h4>
+                    <p>An upcoming technical breakdown outlining how to build reliable grading scripts using system shells and API parameters.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Copyright Block -->
+    <footer>
+        <p>&copy; 2026 Himam Basha. Built using clean static HTML architecture. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
